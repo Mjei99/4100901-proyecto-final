@@ -18,6 +18,7 @@ This repository contains the example for the final project of the course computa
 ## Functionality
 El proyecto de cerradura digital, se desarrolo en IDE de STM32 para la Nucleo L476RG. Tiene como objetivo principal implementar un sistema de seguridad avanzado. Este sistema puede recibir información de dos fuentes principales: un teclado físico y un módulo ESP8266 para la comunicación inalámbrica. Una vez que el microcontrolador recibe la información de entrada, su función principal es verificar si la clave proporcionada es correcta o incorrecta. Esta verificación se lleva a cabo mediante algoritmos específicos y comparaciones de datos. Dependiendo del resultado de esta verificación, el microcontrolador tomará la decisión de mostrar un mensaje apropiado en la pantalla OLED SSD1306. Si la clave es correcta, se otorgará acceso y se mostrará un mensaje de bienvenida, mientras que si la clave es incorrecta, se denegará el acceso y se mostrará un mensaje de error correspondiente.
 * The keypad:  mediante este los usuarios pueden presionar estas teclas para ingresar una clave numérica o, que se utilizará para verificar la identidad del usuario y permitir o denegar el acceso.
+  
 Los elementos clave para este proyecto son:
   
 * The Debug console:  El teclado está conectado al microcontrolador STM32 Nucleo L476RG mediante líneas GPIO. Cuando se presiona una tecla en el keypad, se genera una señal eléctrica en la fila y la columna correspondientes, y el microcontrolador detecta esta señal y la interpreta como una entrada válida.
